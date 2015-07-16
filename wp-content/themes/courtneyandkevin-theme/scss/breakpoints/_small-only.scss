@@ -1,0 +1,23 @@
+/******************************************************************
+
+Stylesheet: Small-Only Stylesheet
+
+Styles apply between base and 640px.
+
+******************************************************************/
+
+.internal-header {
+    height: 300px;
+
+    .outer {
+        height: 300px;
+
+        .tagline {
+            font-size: 30px;
+        }
+
+        .arrow {
+            display: none !important;
+        }
+    }
+}

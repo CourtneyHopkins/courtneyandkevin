@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){jQuery(document).foundation();e("#homepage-slideshow").slick({dots:!0,arrows:!1,autoplay:!0})});

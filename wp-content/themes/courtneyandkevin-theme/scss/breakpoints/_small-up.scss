@@ -1,0 +1,125 @@
+/******************************************************************
+
+Stylesheet: Small-Up Stylesheet
+
+Styles apply to base and up.
+
+******************************************************************/
+
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: $body-font-family;
+    background-color: $cream;
+}
+
+.hp-opening {
+    width: 100%;
+    background-image: url('../images/hp.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .row {
+        position: absolute;
+        top: 0;
+    }
+
+    .outer {
+        display: table;
+        width: 100%;
+        margin: 0 auto;
+
+        .inner {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            padding: 20px;
+
+            #logo {
+                width: 100%;
+                height: auto;   
+                margin: 0 auto;
+                display: block;
+            } 
+
+            .tagline {
+                font-size: 40px;
+                color: $white;
+                letter-spacing: 1.5px;
+
+                span {
+                    // border-bottom: 1px solid;
+                }
+            }  
+        }
+    }
+}
+
+.menu {
+    margin: 0;
+    list-style-type: none;
+
+    li {
+
+        a {
+            display: block;
+            font-size: 20px;
+            font-family: $font-family-serif;
+        }
+    }
+}
+
+#logo {
+    @include transition(all 0.2s ease-in-out);
+}
+
+.homepage-header {
+
+    #logo {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+}
+
+.internal-header {
+
+    #logo {
+        max-width: 300px;
+    }
+
+    .tagline,
+    .arrow {
+        display: none !important;
+    }
+}
+
+/**
+ * wordpress required css
+ */
+
+.wp-caption,
+.gallery-caption,
+.wp-caption-text,
+.sticky,
+.bypostauthor {
+	max-width: 100%;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
